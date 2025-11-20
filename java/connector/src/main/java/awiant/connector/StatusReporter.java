@@ -34,7 +34,7 @@ public class StatusReporter {
         double tps = Math.min(1000.0 / meanTickTime, 20.0);
 
         int playerCount = server.getPlayerList().getPlayerCount();
-        String statusMessage = String.format("[UPDATE] TPS: %.2f %s",
+        String statusMessage = String.format("TPS: %.2f %s",
                 tps, playerCount > 0 ? (" | Online: " + playerCount) : "");
 
         if (Connector.bridge != null) {

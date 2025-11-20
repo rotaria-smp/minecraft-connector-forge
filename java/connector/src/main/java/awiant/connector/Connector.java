@@ -65,7 +65,7 @@ public class Connector {
         MinecraftForge.EVENT_BUS.register(new chatHandler());
 
         // Initialize with default port
-        bridge = new DiscordBridge(26644);
+        bridge = new DiscordBridge("localhost", 8080);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
